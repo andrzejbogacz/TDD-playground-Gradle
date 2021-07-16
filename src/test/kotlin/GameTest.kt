@@ -8,4 +8,13 @@ internal class GameTest {
         val game = Game()
         assertEquals(game.score, 0)
     }
+
+    @Test
+    fun test_givenTossOneThenScoreIsGreaterThanZero(){
+        val game = Game()
+
+        game.toss()
+
+        assertTrue(game.score > 0)
+    }
 }
